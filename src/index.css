@@ -1,0 +1,569 @@
+
+/* Fonts */
+.irish-grover-regular {
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+}
+
+.preahvihear-regular {
+  font-family: "Preahvihear", sans-serif;
+  font-weight: 400;
+}
+
+/* Body styling */
+body {
+  font-family: "Preahvihear", sans-serif;
+  background-color: #1B063D;
+  color: white;
+  margin: 2% 8%;
+  padding: 0;
+
+}
+
+
+/* ------------ Header styles ------------*/
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* space between links */
+  margin-bottom: 4%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: rgb(97, 127, 153);
+  text-decoration: underline;
+}
+
+/* Intro section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+
+
+.text h1.hii {
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.first {
+  font-size: 28px;
+  margin-top: -5px;
+}
+
+.second {
+  font-size: 16px;
+  margin-top: -36px;
+}
+
+/* Profile image */
+.profile-img {
+  width: 600px;
+  height: 600px;
+  border-radius: 40%;
+  margin-bottom: 10px;
+}
+
+/* ------------ About styles ------------*/
+
+.title{
+    font-size: 2em;
+}
+.ab-srt {
+  /* border: 2px solid white; */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.063); /* subtle white overlay */
+  max-width: 1000px;
+  margin: 20px auto;
+
+}
+
+.section{
+    border: 2px solid whitesmoke;
+    padding: 0 30px;
+    border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+      margin-bottom: 50px;
+      padding-bottom: 20px;
+}
+
+/* ------------ Skills styles ------------*/
+
+
+/* --- Skills Grid Layout --- */
+.skills-grid {
+  display: grid;
+  /* 3 columns of equal size */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 50px;
+  max-width: 900px; /* Adjust to control the grid width */
+  margin: 0 auto; /* Centers the grid */
+}
+
+/* --- The Skill Card (Matching the Design) --- */
+.skill-card {
+  /* Bright purple background for the card */
+  background-color: #8a4ceda1; 
+  color: #ffffff;
+  padding: 30px 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.088);
+  /* The Key Effect: Blurred Purple Glow */
+  box-shadow: 0 0 20px rgba(126, 126, 194, 0.899);
+  
+  /* Optional: Make the text slightly blurred/glowy too */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.244);
+  
+  /* Optional: Smooth hover effect */
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  /* Subtle lift on hover */
+  transform: translateY(-5px);
+}
+.skill-img{
+    margin-top: 20px;
+}
+
+/* ------------ Projects styles ------------*/
+/* Projects Section */
+.projects-main-title {
+  font-size: 3em;
+  margin-bottom: 40px;
+  text-align: left;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Irish Grover", system-ui;
+  color: #9a4dff;
+}
+
+/* Project Card with Zigzag Layout */
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+  background: linear-gradient(145deg, rgba(42, 15, 84, 0.7), rgba(26, 0, 51, 0.7));
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(154, 77, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Image on the right */
+.project-card.image-right {
+  flex-direction: row;
+}
+
+/* Image on the left */
+.project-card.image-left {
+  flex-direction: row-reverse;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-type {
+  font-size: 0.9em;
+  color: #ffcc00;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.project-title {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Irish Grover", system-ui;
+}
+
+.project-description {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+}
+
+/* Technologies Section */
+.technologies-section {
+  margin-bottom: 25px;
+}
+
+.technologies-section h4 {
+  color: #9a4dff;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-family: "Preahvihear", sans-serif;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  background: rgba(154, 77, 255, 0.2);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  border: 1px solid rgba(154, 77, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(154, 77, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.features-section {
+  margin-bottom: 25px;
+}
+
+.features-section h4 {
+  color: #9a4dff;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-family: "Preahvihear", sans-serif;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.5;
+}
+
+.features-list li:before {
+  content: '▸';
+  color: #ffcc00;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.project-sparkle {
+  font-size: 1.5em;
+  color: #ffcc00;
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Image Container */
+.project-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #330066, #220044);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(154, 77, 255, 0.5);
+}
+
+.project-image {
+  max-width: 95%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Simple Projects Section */
+.simple-projects-section {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 2px solid rgba(154, 77, 255, 0.3);
+}
+
+.simple-projects-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-family: "Irish Grover", system-ui;
+}
+
+.simple-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.simple-project-card {
+  background: linear-gradient(145deg, rgba(42, 15, 84, 0.8), rgba(26, 0, 51, 0.8));
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(154, 77, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.simple-project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(154, 77, 255, 0.2);
+}
+
+.simple-project-image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.simple-project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+
+.simple-project-info {
+  padding: 25px;
+}
+
+.simple-project-type {
+  color: #ffcc00;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.simple-project-title {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 10px 0;
+  font-family: "Irish Grover", system-ui;
+}
+
+.simple-project-description {
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .project-card {
+    flex-direction: column !important;
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .simple-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .project-title {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-main-title {
+    font-size: 2.2em;
+    text-align: center;
+  }
+  
+  .project-card {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .simple-projects-title {
+    font-size: 2em;
+  }
+  
+  .tech-tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 15px;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+  }
+  
+  .simple-project-image-container {
+    height: 200px;
+  }
+}
+
+/* --------- Responsive Adjustments (The key changes are here) --------- */
+
+
+
+@media (max-width: 992px) {
+
+
+    /* Header */
+.nav {
+  gap: 40px; 
+  margin-bottom: 1%;
+}
+
+.nav a {
+  font-size: 16px;
+}
+
+.nav a:hover {
+  color: rgb(97, 127, 153);
+  text-decoration: underline;
+}
+
+.text h1.hii {
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.first {
+  font-size: 18px;
+}
+
+.second {
+  font-size: 10px;
+  margin-top: -22px;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+}
+
+/*  Skills*/
+
+.skills-grid {
+
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  max-width: 500px; 
+}
+
+.skill-card {
+  padding: 8% 5%;
+  font-size: 0.9em;
+  box-shadow: 0 0 20px rgba(126, 126, 194, 0.643);
+}
+
+.skill-img{
+    width: 100%;
+    margin-left: 3%;
+}
+
+
+  .project-card {
+    flex-direction: column !important; /* Forces stacking */
+  }
+
+  /* --- Other Responsive Styles (Unchanged) --- */
+  .project-details, .project-image-container {
+    width: 100%; /* Take full width */
+    padding: 10px 0;
+  }
+  
+
+  .project-title {
+    font-size: 1.8em;
+  }
+
+  .project-description {
+    font-size: 1em;
+  }
+ 
+}
+
+/* --- Smaller Screen Adjustments (Unchanged) --- */
+@media (max-width: 600px) {
+
+  .projects-main-title {
+    font-size: 2em;
+  }
+  .skill-img{
+    width: 100%;
+    margin-left: 3%;
+}
+}
+
+/* Responsive for larger screens */
+@media screen and (min-width: 768px) {
+  .intro {
+    flex-direction: row;       /* side by side on desktop */
+    justify-content: space-between;
+    align-items: center;       /* ✅ aligns image + text vertically center */
+    text-align: left;
+  }
+
+  .image-container {
+    max-width: 50%;  
+    display: flex;
+    justify-content: center;   /* ✅ keep image centered in its half */
+  }
+
+  .text {
+    max-width: 45%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* ✅ center text vertically */
+  }
+
+.skill-img{
+    width: 100%;
+}
+}
+
+
+
+

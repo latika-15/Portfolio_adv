@@ -101,7 +101,7 @@ const Projects = () => {
               onClick={() => window.open(live_link, "_blank")}
               className="live-demo-btn project-card-demo-btn"
             >
-              Live Demo
+              See Live
             </button>
           
 

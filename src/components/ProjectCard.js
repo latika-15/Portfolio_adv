@@ -7,7 +7,8 @@ const ProjectCard = ({
   technologies = [], 
   features = [], 
   imageUrl, 
-  layout = 'image-right' 
+  layout = 'image-right' ,
+   live_link 
 }) => {
   return (
     <div className={`project-card ${layout}`}>
@@ -41,6 +42,15 @@ const ProjectCard = ({
               </ul>
             </div>
           )}
+           {/* Live Demo Button */}
+          {live_link && (
+            <button 
+              onClick={() => window.open(live_link, "_blank")}
+              className="live-demo-btn project-card-demo-btn"
+            >
+              Live Demo
+            </button>
+          )}
           
           <div className="project-sparkle">✨</div>
         </div>
@@ -51,6 +61,7 @@ const ProjectCard = ({
         <img src={imageUrl} alt={title} className="project-image" />
        
       </div>
+     
     </div>
   );
 };

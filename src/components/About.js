@@ -1,5 +1,6 @@
 export default function About(){
     return(
+        <>
         <section className="section about" id="about">
         <h2 className="title">
             About Me
@@ -42,14 +43,17 @@ Now, in my 4th year, I’m sharpening my skills in UI/UX design, frontend develo
         </p>
         </div>
      
+        
+
+        </section>
         <h2>Contact:</h2>
         <p>Looking forward to working with a collaborative team where my frontend and graphic design skills can help create seamless digital experiences and truly make an impact.
             <br></br>
             Let's connect!
         </p>
         <p>Email: lavit@gmail.com</p>
+        </>
 
-        </section>
         
     )
 }

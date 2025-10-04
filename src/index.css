@@ -390,6 +390,48 @@ body {
   font-size: 0.95em;
 }
 
+/* Live Demo Button Styles */
+.live-demo-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.live-demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.live-demo-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.live-demo-btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.project-card-demo-btn {
+  align-self: flex-start;
+}
+
+/* Simple project card button alignment */
+.simple-project-info .live-demo-btn {
+  width: auto;
+  display: inline-block;
+}
+
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .project-card {

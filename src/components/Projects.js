@@ -15,7 +15,8 @@ const projectsData = [
     technologies: ['HTML', 'CSS', 'JS', 'SQL','PHP'],
     features: ['Semester-wise Roadmaps', 'Certification Tracking', 'Resume Builder', 'Job Alerts', 'Progress Tracking'],
     status: 'Completed',
-    imageKey: 'techvision', // Use key instead of direct URL
+    imageKey: 'techvision',
+    live_link: 'https://latika-15.github.io/TechVision/', // Use key instead of direct URL
   },
   {
     type: 'Dashboard',
@@ -30,7 +31,8 @@ const projectsData = [
     technologies: ['Figma', 'UI/UX Design', 'Data Visualization','Wireframing'],
     features: ['Real-time Analytics', 'Energy Consumption Reports', 'Usage Tips', 'Appliance-wise Tracking'],
     status: "Design completed",
-    imageKey: 'dashboard', // Use key instead of direct URL
+    imageKey: 'dashboard',
+    live_link: 'https://www.figma.com/proto/OCWDFodYy6bjsiTrGkvQSc/Untitled?page-id=0%3A1&node-id=54-10&viewport=37%2C67%2C0.76&t=PyfpwvJ82HcxyXVo-1&scaling=scale-down&content-scaling=fixed' // Use key instead of direct URL
   }
 ];
 
@@ -43,6 +45,7 @@ const simpleProjectsData = [
                   of planets around the sun. It visually explains the solar system dynamics 
                   with smooth, responsive animations and an engaging UI.`,
     imageKey: 'solar',
+    live_link: 'https://latika-15.github.io/solar-system/',
   },
   {
     type: 'Mini Project',
@@ -51,6 +54,7 @@ const simpleProjectsData = [
                   The game allows two players to compete in real-time, highlighting winning 
                   combinations and preventing invalid moves.`,
     imageKey: 'tictac',
+    live_link:'https://latika-15.github.io/Tic-Tac-Toe/',
   }
 ];
 
@@ -71,6 +75,7 @@ const Projects = () => {
             features={project.features}
             imageUrl={projectImages[project.imageKey]} // Get URL from mapping
             layout={index % 2 === 0 ? 'image-right' : 'image-left'}
+            live_link={project.live_link} // Pass live_link prop
           />
         ))}
       </div>
@@ -92,6 +97,14 @@ const Projects = () => {
                 <span className="simple-project-type">{project.type}</span>
                 <h4 className="simple-project-title">{project.title}</h4>
                 <p className="simple-project-description">{project.description}</p>
+                   <button 
+              onClick={() => window.open(live_link, "_blank")}
+              className="live-demo-btn project-card-demo-btn"
+            >
+              Live Demo
+            </button>
+          
+
               </div>
             </div>
           ))}

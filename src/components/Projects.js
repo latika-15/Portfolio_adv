@@ -33,7 +33,66 @@ const projectsData = [
     status: "Design completed",
     imageKey: 'dashboard',
     live_link: 'https://www.figma.com/proto/OCWDFodYy6bjsiTrGkvQSc/Untitled?page-id=0%3A1&node-id=54-10&viewport=37%2C67%2C0.76&t=PyfpwvJ82HcxyXVo-1&scaling=scale-down&content-scaling=fixed' // Use key instead of direct URL
-  }
+  },
+  {
+  type: 'Data Analytics Project',
+  title: 'Customer Behavior Analysis',
+  description: `An end-to-end data analytics project focused on analyzing customer 
+                purchasing behavior and sales patterns to derive actionable business 
+                insights. The project covers the complete analytics lifecycle including 
+                data preprocessing, exploratory data analysis, SQL-based querying, 
+                and interactive dashboard development for executive decision-making.`,
+  technologies: [
+    'Python',
+    'Pandas',
+    'NumPy',
+    'Matplotlib',
+    'Seaborn',
+    'SQL',
+    'MySQL',
+    'Power BI'
+  ],
+  features: [
+    'Customer Segmentation Analysis',
+    'Revenue Analysis by Demographics',
+    'Discount Dependency Detection',
+    'High-Spending Customer Identification',
+    'Interactive Power BI Dashboard'
+  ],
+  status: 'Completed',
+  imageKey: 'customer_analysis',
+  live_link: 'https://github.com/latika-15/Customer_Behavior_Analysis'
+},
+{
+  type: 'Hackathon Project',
+  title: 'HealthTalk',
+  description: `HealthTalk is a secure healthcare web platform uder HIPAA(Health Insurance Portability and Accountability Act) developed during a 
+                hackathon to enable safe and private exchange of medical documents 
+                between patients and doctors. The platform focuses on data privacy, 
+                secure authentication, appointment scheduling, and intelligent 
+                healthcare recommendations.`,
+  technologies: [
+    'React.js',
+    'Tailwind CSS',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Socket.io',
+    'Firebase',
+    'MapLibre'
+  ],
+  features: [
+    'Secure Medical Document Sharing',
+    'Doctor & Patient Authentication',
+    'Appointment Scheduling System',
+    'Nearby Doctor & Clinic Search',
+    'Healthcare Chatbot & Feedback System'
+  ],
+  status: 'Hackathon Project',
+  imageKey: 'healthtalk',
+  live_link: 'https://healthtalk.onrender.com/'
+}
+
 ];
 
 const simpleProjectsData = [
@@ -98,11 +157,12 @@ const Projects = () => {
                 <h4 className="simple-project-title">{project.title}</h4>
                 <p className="simple-project-description">{project.description}</p>
                    <button 
-              onClick={() => window.open(live_link, "_blank")}
-              className="live-demo-btn project-card-demo-btn"
-            >
-              See Live
-            </button>
+  onClick={() => window.open(project.live_link, "_blank")}
+  className="live-demo-btn project-card-demo-btn"
+>
+  See Live
+</button>
+
           
 
               </div>

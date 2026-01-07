@@ -2,9 +2,7 @@ import React from 'react';
 // No specific CSS import needed here if you're using index.css globally
 
 const skillsList = [
-  'Canva', 'HTML', 'CSS',
-  'JavaScript', 'Figma', 'Python',
-  'C/C++', 'SQL', 'Git'
+  'HTML', 'CSS','JavaScript','Pandas','Numpy','Matplotlib','Python', 'SDLC','OOPs','Git', 'PowerBI', 'C/C++', 'SQL', 'Git','Canva','Figma'
 ];
 
 const Skills = () => {
